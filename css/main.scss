@@ -2,12 +2,23 @@
 ---
 
 $padding: 3rem;
+$color__green: #6F8831;
 
 $bp-medium: 680px;
 $bp-large: 1000px;
 
+@mixin group {
+  overflow: auto;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *:before, *:after {
@@ -20,6 +31,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 300;
+  height: 100%;
 }
 @media (min-width: $bp-medium) {
   body {
@@ -33,43 +45,40 @@ body {
 }
 
 .site-header {
-  background: white;
+  @include group;
+  background: $color__green;
+  color: white;
   padding: 0; 
   text-align: center;
+
+  .site-title a svg {
+    height: auto;
+    width: 80%;
+  }
+
+  .site-title a svg path {
+    fill: white;
+  }
+
+  .site-title a {
+    display: block;
+    margin: 2em 0 2em;
+    opacity: 1;
+    transition: opacity .05s ease-in-out;
+  }
+
+  .site-title a:hover,
+  .site-title a:focus {
+    opacity: .7;
+  }
 }
 
 @media (min-width: $bp-medium) {
   .site-header {
-    display: flex;
+    //display: flex;
   }
 }
 
-.site-title {
-  font-size: 1.2em;
-  line-height: 1.4rem;
-  margin: 0;
-  padding: 1em $padding;
-}
-.site-title span {
-  font-weight: 700;
-}
-.site-title a,
-.site-title a:visited {
-  color: rgb(80,80,80);
-  transition: color .15s ease-in-out;
-}
-.site-title a:hover,
-.site-title a:target {
-  color: black;
-}
-
-@media (min-width: $bp-medium) {
-  .site-navigation {
-    right: 1rem;
-    padding-top: 1em;
-    position: absolute;
-  }
-}
 
 .site-navigation ul {
   margin-bottom: 1em;
@@ -82,16 +91,17 @@ body {
 
 .site-navigation a,
 .site-navigation a:visited {
-  color: rgb(120,120,120);
+  color: white;
   font-size: .9em;
   display: inline-block;
   padding: .3em 1em;
-  transition: color .1s ease-in-out;
+  opacity: 1;
+  transition: opacity .1s ease-in-out;
 }
 
 .site-navigation a:hover,
 .site-navigation a:target {
-  color: black;
+  opacity: .7;
 }
 
 .page-content > * {
@@ -101,20 +111,6 @@ body {
   width: 86%;
 }
 
-.page-header {
-  background: #2F8F24;
-  background: linear-gradient(to right, #63A65B , #7ED475);
-  margin: 0;
-  min-width: 100%;
-  padding: 4em $padding;
-  width: auto;
-}
-
-@media (min-width: $bp-large) {
-  .page-header {
-    padding: 6em $padding;
-  }
-}
 
 .page-title {
   font-size: 1.4em;
