@@ -28,6 +28,9 @@ github_username:  ryanaripley
 markdown: kramdown
 permalink: pretty
 
+sass:
+  sass_dir: _scss
+
 plugins:
   - jekyll-feed
 exclude:
