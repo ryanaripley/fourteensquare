@@ -1,0 +1,39 @@
+- name: Mariner Software
+  url: https://marinersoftware.com
+  screenshot: screenshot_mariner.jpg
+  skills: Website design, WordPress, eCommerce
+
+- name: Vaccines.com
+  url: https://vaccines.com
+  screenshot: screenshot_vaccines.jpg
+  skills: WordPress, data visualization
+
+- name: Rumriver Art Center
+  url: https://rumriverart.com
+  screenshot: screenshot_rumriver.jpg
+  skills: Website design, WordPress
+
+- name: Westmark Productions
+  url: https://westmarkproductions.com
+  screenshot: screenshot_westmark.jpg
+  skills: Branding, website design, WordPress, eCommerce
+
+- name: Children's Performing Arts
+  url: https://childrensperformingartsmn.org
+  screenshot: screenshot_cpa.jpg
+  skills: Website design, WordPress
+
+- name: William Inge Center for the Arts
+  url: https://ingecenter.org
+  screenshot: screenshot_inge.jpg
+  skills: Website design, WordPress, tech integration
+
+- name: Great River Chorale
+  url: https://greatriverchorale.org
+  screenshot: screenshot_grc.jpg
+  skills: Branding, website design, WordPress, eCommerce
+
+- name: Executive Talent Partners
+  url: https://etp-talent.com
+  screenshot: screenshot_etp.jpg
+  skills: Website design, WordPress

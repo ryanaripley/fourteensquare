@@ -4,3 +4,13 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
+
+This is the homepage.
+
+<ul>
+{% for project in site.data.projects %}
+
+  <li>{{ project.name }}</li>
+
+{% endfor %}
+</ul>
