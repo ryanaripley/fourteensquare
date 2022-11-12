@@ -1,0 +1,45 @@
+.projects {
+  margin: 3em 0;
+}
+
+.project-list {
+  list-style-type: none;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+  width: 92%;
+  display: grid;
+  gap: 2em;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-item {
+}
+
+.project-screenshot {
+  filter: grayscale(100%);
+  transition: all .15s ease-in-out;
+  border: 1px solid rgb(192, 192, 192);
+
+  &:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+  }
+}
+
+.project-name {
+  font-size: 1.2em;
+  margin: 0;
+
+  a, a:visited {
+    color: inherit;
+  }
+}
+
+.project-skills {
+  margin: 0;
+}

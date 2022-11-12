@@ -1,0 +1,71 @@
+.site-header {
+  @include group;
+  padding: 1.5em 4% .8em;
+  text-align: center;
+
+  .site-title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-title a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.05s ease-in-out;
+  }
+
+  .site-title a:hover,
+  .site-title a:focus {
+    opacity: 0.7;
+  }
+
+  .site-title a svg {
+    max-width: 10em;
+    height: auto;
+  }
+
+}
+
+@media (min-width: $bp-medium) {
+  .site-header {
+    display: flex;
+  }
+}
+
+.site-navigation ul {
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+.site-navigation ul li {
+  display: inline;
+}
+
+.site-navigation a,
+.site-navigation a:visited {
+  color: white;
+  font-size: 0.9em;
+  display: inline-block;
+  padding: 0.3em 1em;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.site-navigation a:hover,
+.site-navigation a:target {
+  opacity: 0.7;
+}
+
+.page-title {
+  font-size: 1.4em;
+  padding: 0 2%;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .page-title {
+    font-size: 1.8em;
+    padding: 0 14%;
+  }
+}

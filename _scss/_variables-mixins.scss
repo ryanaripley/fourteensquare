@@ -1,0 +1,15 @@
+$padding: 3rem;
+$color__green: #538336;
+$color__brown: #EBDFC9;
+
+$bp-medium: 680px;
+$bp-large: 1000px;
+
+@mixin group {
+  overflow: auto;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

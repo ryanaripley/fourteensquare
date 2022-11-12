@@ -1,0 +1,42 @@
+.site-footer {
+  background: $color__green;
+  margin: 0;
+  color: white;
+  padding: 2.5em 4%;
+
+  .footer-contact {
+    margin-top: 0;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+
+    a, .footer-contact a:visited {
+      color: white;
+      border-bottom: 2px solid white;
+      transition: all .05s ease-in-out;
+      padding-bottom: .2em;
+
+      &:hover, &:target {
+        color: rgba(white, .6);
+        border-color: rgba(white, .6);
+      }
+    }
+  }
+
+  .footer-logo {
+    max-width: 20em;
+    margin-bottom: .5em;
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    svg path {
+      fill: white;
+    }
+  }
+
+  .footer-copyright {
+    font-size: .8em;
+  }
+}

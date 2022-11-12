@@ -1,0 +1,26 @@
+.hero {
+  background: $color__brown;
+  padding: 2em 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4em;
+
+  .hero-text {
+    max-width: 20em;
+    margin-left: 4%;
+    padding:0;
+    width: 92%;
+  }
+
+  .hero-illustration {
+    position: absolute;
+    width: 50%;
+    right: 4%;
+    top: 25%;
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }  
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  color: #2C2C2C;
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  font-weight: 300;
+  @media (min-width: $bp-medium) {
+      font-size: 1.1rem;
+  }
+  @media (min-width: $bp-large) {
+      font-size: 1.1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+p,
+ul,
+blockquote {
+  line-height: 1.5;
+}
+
+p {
+}
+
+ul {
+  padding-left: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:visited {
+  color: $color__green;
+  text-decoration: none;
+}
