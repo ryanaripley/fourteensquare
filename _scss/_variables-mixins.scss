@@ -1,6 +1,12 @@
 $padding: 3rem;
+$margin: 5%;
+
+$width__mobile: 100% - ($margin * 2);
+$width__desktop: 60em;
+
 $color__green: #538336;
 $color__brown: #EBDFC9;
+$color__black: #2C2C2C;
 
 $bp-medium: 680px;
 $bp-large: 1000px;

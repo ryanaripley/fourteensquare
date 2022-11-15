@@ -1,17 +1,26 @@
 .site-header {
   @include group;
-  padding: 1.5em 4% .8em;
+  display: flex;
+  align-items: center;
+  padding: 1.2em $margin .6em;
   text-align: center;
 
+  @media (min-width: $bp-medium) {
+  }
+
   .site-title {
-    margin: 0;
+    margin: 0 auto 0 0;
     padding: 0;
+    max-width: 60%;
+
+    @media (min-width: $bp-medium) {
+      max-width: 10em;
+    }
   }
 
   .site-title a {
     margin: 0;
     padding: 0;
-    display: block;
     opacity: 1;
     transition: opacity 0.05s ease-in-out;
   }
@@ -22,50 +31,35 @@
   }
 
   .site-title a svg {
-    max-width: 10em;
+    width: 100%;
     height: auto;
   }
 
-}
-
-@media (min-width: $bp-medium) {
-  .site-header {
-    display: flex;
+  .header-contact {
+    transform: translateY(-.3em);
+    
+    a, a:visited {
+      font-family: "Rubik", sans-serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: $color__black;
+      transition: opacity .05s ease-in-out;
+    }
+    a:hover, a:target {
+      opacity: .7;
+    }
   }
-}
 
-.site-navigation ul {
-  margin-bottom: 1em;
-  padding: 0;
-}
-
-.site-navigation ul li {
-  display: inline;
-}
-
-.site-navigation a,
-.site-navigation a:visited {
-  color: white;
-  font-size: 0.9em;
-  display: inline-block;
-  padding: 0.3em 1em;
-  opacity: 1;
-  transition: opacity 0.1s ease-in-out;
-}
-
-.site-navigation a:hover,
-.site-navigation a:target {
-  opacity: 0.7;
 }
 
 .page-title {
   font-size: 1.4em;
   padding: 0 2%;
   text-align: center;
-}
-@media (min-width: 800px) {
-  .page-title {
+
+  @media (min-width: 800px) {
     font-size: 1.8em;
     padding: 0 14%;
   }
 }
+

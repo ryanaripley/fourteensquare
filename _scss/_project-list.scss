@@ -4,15 +4,15 @@
 
 .project-list {
   list-style-type: none;
-  max-width: 60em;
+  max-width: $width__desktop;
   margin-left: auto;
   margin-right: auto;
   padding:0;
-  width: 92%;
+  width: $width__mobile;
   display: grid;
   gap: 2em;
 
-  @media (min-width: 800px) {
+  @media (min-width: $bp-medium) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -21,13 +21,16 @@
 }
 
 .project-screenshot {
-  filter: grayscale(100%);
-  transition: all .15s ease-in-out;
   border: 1px solid rgb(192, 192, 192);
 
-  &:hover {
-    filter: grayscale(0%);
-    transform: scale(1.02);
+  @media (min-width: $bp-medium) {
+    filter: grayscale(100%);
+    transition: all .15s ease-in-out;
+  
+    &:hover {
+      filter: grayscale(0%);
+      transform: scale(1.02);
+    }
   }
 }
 

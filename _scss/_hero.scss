@@ -1,22 +1,43 @@
 .hero {
   background: $color__brown;
-  padding: 2em 0;
-  position: relative;
+  padding: 0;
   overflow: hidden;
   margin-bottom: 4em;
 
+  .hero-inside {
+    margin: 0 auto;
+    max-width: $width__desktop;
+    position: relative;
+    width: $width__mobile;
+  }
+
   .hero-text {
     max-width: 20em;
-    margin-left: 4%;
-    padding:0;
-    width: 92%;
+    padding: 2em 0 3em;
+
+    @media (min-width: $bp-medium) {
+      padding: 2em 0;
+    }
+
+    a, a:visited {
+      border-bottom: 2px solid $color__green;
+      color: $color__black;
+      display: inline-table;
+      padding-bottom: .05em;
+      opacity: 1;
+      transition: opacity .05s ease-in-out;
+    }
+    a:hover, a:target {
+      opacity: .8;
+    }
   }
 
   .hero-illustration {
     position: absolute;
     width: 50%;
-    right: 4%;
-    top: 25%;
+    right: 0;
+    bottom: -10%;
+    max-width: 30em;
 
     svg {
       max-width: 100%;

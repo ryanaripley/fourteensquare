@@ -2,13 +2,15 @@
 layout: default
 ---
 <section class="hero">
-  <div class="hero-text">
-    <h2>We build websites.</h2>
-    <p>We specialize in branding, website design, WordPress development, and technology integration for small businesses and nonprofits.</p>
-    <p><a href="mailto:ryan@fourteensquare.com">Get in touch.</a></p>
-  </div>
-  <div class="hero-illustration">
-    {% include hero-illustration.html %}
+  <div class="hero-inside">
+    <div class="hero-text">
+      <h2>We build websites.</h2>
+      <p>We specialize in branding, website design, WordPress development, and technology integration for small businesses and nonprofits.</p>
+      <p><a href="mailto:ryan@fourteensquare.com">Get in touch.</a></p>
+    </div>
+    <div class="hero-illustration">
+      {% include hero-illustration.html %}
+    </div>
   </div>
 </section>
 
