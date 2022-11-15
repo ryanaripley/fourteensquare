@@ -1,12 +1,28 @@
 .site-footer {
-  background: $color__green;
-  margin: 0;
+  background-color: $color__black;
+  background: linear-gradient(93.51deg, #4A7630, #6baf41);
   color: white;
+  margin: 0;
   padding: 2.5em $margin;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+      left: 0;
+      right: 0;
+      top: 10%;
+      bottom: 0;
+    background-image: url(/assets/svg/mark.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left 4em;
+    background-size: 100%;
+  }
 
   .footer-contact {
     margin-top: 0;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     font-size: 1.2em;
 
     a, .footer-contact a:visited {
