@@ -1,13 +1,3 @@
-- name: Mariner Software
-  url: https://marinersoftware.com
-  screenshot: screenshot_mariner.jpg
-  skills: Website design, WordPress, eCommerce
-
-- name: Vaccines.com
-  url: https://www.vaccines.com/
-  screenshot: screenshot_vaccines.jpg
-  skills: WordPress, data visualization
-
 - name: Rumriver Art Center
   url: https://rumriverart.com
   screenshot: screenshot_rumriver.jpg
